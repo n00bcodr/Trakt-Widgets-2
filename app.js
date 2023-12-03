@@ -22,7 +22,7 @@ i18n.configure({
   defaultLocale: 'en',
   retryInDefaultLocale: true,
   queryParameter: 'language',
-  directory: './locales'
+  directory: path.resolve('./locales')
 });
 env.addGlobal('date', new Date());
 env.addGlobal('__', i18n.__);

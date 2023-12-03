@@ -13,7 +13,7 @@ const to_base64 = async (url) => {
     
     return `data:${contentType};base64,${Buffer.from(blob).toString('base64')}`;
   } catch (e) {
-    console.log('Error download image');
+    console.error('Error download image');
   }
   return null;
 };
